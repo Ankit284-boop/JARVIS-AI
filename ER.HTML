@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+<head>
+    <title>
+        How to detect operating system on the
+        client machine using JavaScript ?
+    </title>
+</head>
+<!-- <button onclick="myFunction()">Replace document</button> -->
+
+<!-- <script>
+    if (OSName=="Windows") {
+        function myFunction() {
+            location.replace("/")
+
+
+}
+
+    }
+
+    
+</script> -->
+
+<body style="text-align:center;">
+
+    <h1 style="color:green;">ANKIT SATPATI</h1>
+
+    <!-- <button type="button" class="btn btn-outline-danger" onclick="operatingSytem()">DETECT OS</button> -->
+
+    <p id="OS"></p>
+
+    <!-- Script to display the OS name -->
+    <script>
+        function operatingSytem() {
+            var OSName = "Unknown OS";
+            if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
+            if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
+            if (navigator.appVersion.indexOf("X11") != -1) OSName = "UNIX";
+            if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
+
+            // Display the OS name 
+            document.getElementById("OS").innerHTML = OSName;
+        }  
+    </script>
+    <script>
+    if (OSName=="Windows") {
+        location.replace("/")
+        
+    }
+
+
+      
+    
+
+
+
+
+
+
+    </script>
+<body onload="operatingSytem()">
+<body onload="myFunction()">         
+
+</body>
+
+
+</html>

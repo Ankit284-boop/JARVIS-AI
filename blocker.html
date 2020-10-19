@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+if (position.coords.latitude==22.581696200000003,position.coords.longitude== 88.4304141) {
+    alert("SORRY,YOU CAN NOT VISIT THIS WEBSITE");
+}
+</script>
+<!-- <body onload="showPosition(position)","getLocation()"></body> -->
+<body>
+  <div>
+    welcome to our website {{admin_user}}
+  </div>
+
+</body>
+
+
+</html>
